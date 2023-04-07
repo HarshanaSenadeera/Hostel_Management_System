@@ -1,10 +1,10 @@
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
-import java.util.Objects;
+import java.net.URL;
 
 public class Appinizializor extends Application {
 
@@ -16,9 +16,13 @@ public class Appinizializor extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        primaryStage.setScene(new Scene(FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/lk/ijse/hibernate/view/Loging_Form.fxml")))));
+        URL resource = this.getClass().getResource("/lk/ijse/hibernate/view/Login_Form.fxml");
+        Parent window = FXMLLoader.load(resource);
+        Scene scene = new Scene(window);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("Login Form");
         primaryStage.centerOnScreen();
-        primaryStage.initStyle(StageStyle.UNDECORATED);
+
         primaryStage.show();
     }
 }
