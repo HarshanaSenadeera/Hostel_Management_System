@@ -1,11 +1,12 @@
 package lk.ijse.hibernate.bo.custom;
 
+import lk.ijse.hibernate.bo.SuperBO;
 import lk.ijse.hibernate.dto.LoginDTO;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public interface UserBO {
+public interface UserBO extends SuperBO {
 
     ArrayList<LoginDTO> getAllUsers() throws SQLException, ClassNotFoundException;
 
