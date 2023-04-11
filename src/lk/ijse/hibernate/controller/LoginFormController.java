@@ -7,11 +7,13 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 
 public class LoginFormController {
     public TextField UserName_Id;
     public PasswordField Pasword_Id;
     public Label lblHide;
+    public AnchorPane logging_pane;
 
     public void CancelOnAction(ActionEvent actionEvent) {
     }
