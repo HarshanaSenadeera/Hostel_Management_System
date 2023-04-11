@@ -4,10 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.time.LocalDate;
 /**
  * @author : Harshana Senadeera
@@ -19,6 +16,7 @@ import java.time.LocalDate;
 @Entity
 public class Reservation {
 
+    @Id
     private String res_id;
     private LocalDate date;
     @ManyToOne(cascade = CascadeType.ALL)
