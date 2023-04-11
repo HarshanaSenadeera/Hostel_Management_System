@@ -11,12 +11,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane fx:id="UserPane" prefHeight="589.0" prefWidth="983.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.ManageUserController">
    <children>
       <ImageView fitHeight="301.0" fitWidth="622.0" layoutX="118.0" layoutY="7.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@assests/User.png" />
+            <Image url="@assests/images/User.png" />
          </image>
       </ImageView>
       <Text fill="#fc9300" layoutX="378.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage User" textAlignment="CENTER" wrappingWidth="226.13671875">

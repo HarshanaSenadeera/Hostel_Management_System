@@ -17,7 +17,7 @@
    <children>
       <ImageView fitHeight="412.0" fitWidth="815.0" layoutX="141.0" opacity="0.13" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@assests/HostelStudent.png" />
+            <Image url="@assests/images/HostelStudent.png" />
          </image>
       </ImageView>
       <Text fill="#fc9300" layoutX="406.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Student" textAlignment="CENTER" wrappingWidth="226.13671875">
@@ -95,7 +95,7 @@
       </Button>
       <ImageView fitHeight="39.0" fitWidth="87.0" layoutX="938.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@assests/Search.png" />
+            <Image url="@assests/images/Search.png" />
          </image>
       </ImageView>
    </children>

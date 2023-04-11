@@ -8,7 +8,10 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-
+/**
+ * @author : Harshana Senadeera
+ * @since : 0.1.0
+ **/
 public class LoginFormController {
     public TextField UserName_Id;
     public PasswordField Pasword_Id;
@@ -20,7 +23,7 @@ public class LoginFormController {
 
     public void showPasswordOnMousePressed(MouseEvent mouseEvent) {
 
-        Image img = new Image("/lk/ijse/hibernate/view/assests/Open_Eye1.png");
+        Image img = new Image("/lk/ijse/hibernate/view/assests/images/Open_Eye1.png");
         ImageView view = new ImageView(img);
         view.setFitHeight(20);
         view.setFitWidth(20);
@@ -38,7 +41,7 @@ public class LoginFormController {
     }
 
     public void hidePasswordOnMousePressedd(MouseEvent mouseEvent) {
-        Image img = new Image("/lk/ijse/hibernate/view/assests/Cloce_Eye1.png");
+        Image img = new Image("/lk/ijse/hibernate/view/assests/images/Cloce_Eye1.png");
         ImageView view = new ImageView(img);
         view.setFitHeight(20);
         view.setFitWidth(20);

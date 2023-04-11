@@ -10,7 +10,10 @@ import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * @author : Harshana Senadeera
+ * @since : 0.1.0
+ **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

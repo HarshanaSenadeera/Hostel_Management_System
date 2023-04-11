@@ -6,7 +6,10 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-
+/**
+ * @author : Harshana Senadeera
+ * @since : 0.1.0
+ **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

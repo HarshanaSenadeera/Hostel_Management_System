@@ -5,7 +5,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
-
+/**
+ * @author : Harshana Senadeera
+ * @since : 0.1.0
+ **/
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

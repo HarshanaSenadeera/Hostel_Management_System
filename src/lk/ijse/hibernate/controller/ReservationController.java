@@ -7,7 +7,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-
+/**
+ * @author : Harshana Senadeera
+ * @since : 0.1.0
+ **/
 public class ReservationController {
     public Button btnBack;
     public JFXTextField txtAddress;

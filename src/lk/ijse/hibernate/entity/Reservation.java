@@ -9,7 +9,10 @@ import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import java.time.LocalDate;
-
+/**
+ * @author : Harshana Senadeera
+ * @since : 0.1.0
+ **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

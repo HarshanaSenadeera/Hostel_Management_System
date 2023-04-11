@@ -15,7 +15,7 @@
    <children>
       <ImageView fitHeight="376.0" fitWidth="612.0" layoutX="325.0" layoutY="53.0" opacity="0.17" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@assests/Room.png" />
+            <Image url="@assests/images/Room.png" />
          </image>
       </ImageView>
       <Text fill="#fc9300" layoutX="387.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Room" textAlignment="CENTER" wrappingWidth="226.13671875">
@@ -76,7 +76,7 @@
       </JFXTextField>
       <ImageView fitHeight="39.0" fitWidth="87.0" layoutX="869.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@assests/Search.png" />
+            <Image url="@assests/images/Search.png" />
          </image>
       </ImageView>
       <Button fx:id="btnBack" layoutX="42.0" layoutY="46.0" mnemonicParsing="false" onAction="#BackOnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: orange;" text="Back">

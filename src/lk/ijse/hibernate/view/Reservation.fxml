@@ -15,7 +15,7 @@
    <children>
       <ImageView fitHeight="413.0" fitWidth="776.0" layoutX="68.0" layoutY="47.0" opacity="0.09" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@assests/Manage_Res.png" />
+            <Image url="@assests/images/Manage_Res.png" />
          </image>
       </ImageView>
       <Text fill="#fc9300" layoutX="264.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Reservation" textAlignment="CENTER" wrappingWidth="314.13671875">

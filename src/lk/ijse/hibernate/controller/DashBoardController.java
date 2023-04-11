@@ -10,7 +10,10 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.util.Duration;
-
+/**
+ * @author : Harshana Senadeera
+ * @since : 0.1.0
+ **/
 public class DashBoardController {
 
 
