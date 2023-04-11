@@ -3,6 +3,10 @@ package lk.ijse.hibernate.dao;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+/**
+ * @author : Harshana Senadeera
+ * @since : 0.1.0
+ **/
 public interface CrudDAO <T, ID> extends SuperDAO {
 
     ArrayList<T> getAll() throws SQLException, ClassNotFoundException;

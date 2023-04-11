@@ -10,6 +10,10 @@ import org.hibernate.query.Query;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+/**
+ * @author : Harshana Senadeera
+ * @since : 0.1.0
+ **/
 public class ReserveDAOImpl implements ReserveDAO {
 
     @Override
