@@ -16,7 +16,7 @@ public class Appinizializor extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        URL resource = this.getClass().getResource("/lk/ijse/hibernate/view/DashBoard.fxml");
+        URL resource = this.getClass().getResource("/lk/ijse/hibernate/view/Login_Form.fxml");
         Parent window = FXMLLoader.load(resource);
         Scene scene = new Scene(window);
         primaryStage.setScene(scene);

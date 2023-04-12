@@ -9,37 +9,37 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="AdminDashboard" prefHeight="507.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.DashBoardController">
+<AnchorPane fx:id="AdminDashboard" prefHeight="589.0" prefWidth="983.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.DashBoardController">
    <children>
-      <Text fill="#fc9300" layoutX="250.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="223.13671875">
+      <Text fill="#fc9300" layoutX="380.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="223.13671875">
          <font>
             <Font name="Bell MT Bold" size="46.0" />
          </font>
       </Text>
-      <Separator layoutX="68.0" layoutY="77.0" prefHeight="0.0" prefWidth="607.0" />
-      <ImageView fx:id="imgStudent" fitHeight="163.0" fitWidth="172.0" layoutX="50.0" layoutY="163.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+      <Separator layoutX="240.0" layoutY="74.0" prefHeight="0.0" prefWidth="607.0" />
+      <ImageView fx:id="imgStudent" fitHeight="199.0" fitWidth="215.0" layoutX="50.0" layoutY="163.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assests/images/Reservation.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgRooms" fitHeight="163.0" fitWidth="172.0" layoutX="258.0" layoutY="191.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgRooms" fitHeight="176.0" fitWidth="207.0" layoutX="371.0" layoutY="191.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assests/images/Room_Book.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgKeyMoney" fitHeight="163.0" fitWidth="172.0" layoutX="473.0" layoutY="163.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgKeyMoney" fitHeight="190.0" fitWidth="215.0" layoutX="650.0" layoutY="163.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assests/images/Key_Mney.png" />
          </image>
       </ImageView>
-      <Text layoutX="111.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2023  Hostel Management System. All Right Reserved Design By Harshana Senadeera" />
-      <Label fx:id="lblMenu" layoutX="258.0" layoutY="367.0" prefHeight="38.0" prefWidth="416.0" text="WELCOME" textAlignment="CENTER" textFill="#fc9300">
+      <Text layoutX="176.0" layoutY="552.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2023  Hostel Management System. All Right Reserved Design By Harshana Senadeera" />
+      <Label fx:id="lblMenu" layoutX="343.0" layoutY="388.0" prefHeight="38.0" prefWidth="416.0" text="WELCOME" textAlignment="CENTER" textFill="#fc9300">
          <font>
             <Font name="Berlin Sans FB" size="34.0" />
          </font>
       </Label>
-      <Label fx:id="lblDescription" layoutX="239.0" layoutY="405.0" prefHeight="17.0" prefWidth="454.0" text="Please select one of above main operations to processed" textAlignment="CENTER" />
-      <Button fx:id="btnManageUser" layoutX="544.0" layoutY="94.0" mnemonicParsing="false" onAction="#userOnAction" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: orange;" text="Manage User">
+      <Label fx:id="lblDescription" layoutX="275.0" layoutY="442.0" prefHeight="17.0" prefWidth="454.0" text="Please select one of above main operations to processed" textAlignment="CENTER" />
+      <Button fx:id="btnManageUser" layoutX="707.0" layoutY="94.0" mnemonicParsing="false" onAction="#userOnAction" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: orange;" text="Manage User">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

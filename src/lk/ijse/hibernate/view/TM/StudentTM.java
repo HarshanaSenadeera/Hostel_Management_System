@@ -1,8 +1,6 @@
 package lk.ijse.hibernate.view.TM;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 

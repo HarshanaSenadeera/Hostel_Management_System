@@ -8,6 +8,16 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import lk.ijse.hibernate.bo.BOFactory;
+import lk.ijse.hibernate.bo.custom.UserBO;
+import lk.ijse.hibernate.dto.LoginDTO;
+import lk.ijse.hibernate.util.NotificationController;
+import lk.ijse.hibernate.util.UILoader;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
 /**
  * @author : Harshana Senadeera
  * @since : 0.1.0
@@ -18,7 +28,13 @@ public class LoginFormController {
     public Label lblHide;
     public AnchorPane logging_pane;
 
+    int attempts = 0;
+
+
+    private final UserBO userBO = (UserBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.USER);
     public void CancelOnAction(ActionEvent actionEvent) {
+        UserName_Id.clear();
+        Pasword_Id.clear();
     }
 
     public void showPasswordOnMousePressed(MouseEvent mouseEvent) {
@@ -35,8 +51,30 @@ public class LoginFormController {
         Pasword_Id.requestFocus();
     }
 
-    public void LoggingOnAction(ActionEvent actionEvent) {
+    public void LoggingOnAction(ActionEvent actionEvent) throws SQLException, IOException, ClassNotFoundException {
 
+        UILoader.LoginOnAction(logging_pane, "DashBoard");
+        NotificationController.LoginSuccessfulNotification("Admin");
+        ArrayList<LoginDTO> loginDTOS = userBO.getAllUsers();
+        attempts++;
+        loginDTOS.forEach(e -> {
+            if (attempts <= 3) {
+                if (e.getUserID().equals(UserName_Id.getText()) && e.getPassword().equals(Pasword_Id.getText())) {
+                    try {
+                        UILoader.LoginOnAction(logging_pane, "DashBoard");
+                        NotificationController.LoginSuccessfulNotification("Admin");
+                    } catch (IOException | SQLException ex) {
+                        ex.printStackTrace();
+                    }
+                } else {
+
+                }
+            } else {
+                UserName_Id.setEditable(false);
+                Pasword_Id.setEditable(false);
+                NotificationController.LoginUnSuccessfulNotification("Account is Temporarily Disabled or You Did not Sign in Correctly.");
+            }
+        });
         
     }
 

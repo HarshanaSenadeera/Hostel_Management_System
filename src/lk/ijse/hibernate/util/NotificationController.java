@@ -16,7 +16,7 @@ public class NotificationController {
         Notifications notificationBuilder = Notifications.create()
                 .title(option + " Successfully.!")
                 .text("Your " + option2 + " Details " + option + " is Successfully to the System.")
-                .graphic(new ImageView(new Image("/lk/hostelManagement/pos/view/assets/images/done.png")))
+                .graphic(new ImageView(new Image("/lk/ijse/hibernate/view/assests/images/Done.png")))
                 .hideAfter(Duration.seconds(8))
                 .position(Pos.BOTTOM_RIGHT);
         notificationBuilder.darkStyle();
@@ -27,7 +27,7 @@ public class NotificationController {
         Notifications notificationBuilder = Notifications.create()
                 .title(option + " UnSuccessful.!")
                 .text("Your " + option2 + " Details " + option + " is Unsuccessfully to the System.")
-                .graphic(new ImageView(new Image("/lk/hostelManagement/pos/view/assets/images/error.png")))
+                .graphic(new ImageView(new Image("/lk/ijse/hibernate/view/assests/images/Wrong.png")))
                 .hideAfter(Duration.seconds(8))
                 .position(Pos.BOTTOM_RIGHT);
         notificationBuilder.darkStyle();

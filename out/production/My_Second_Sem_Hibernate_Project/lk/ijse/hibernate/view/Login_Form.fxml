@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="loging_pane" prefHeight="480.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.LoginFormController">
+<AnchorPane fx:id="logging_pane" prefHeight="480.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.LoginFormController">
    <children>
       <AnchorPane layoutX="-1.0" opacity="0.79" prefHeight="480.0" prefWidth="563.0" style="-fx-background-color: black;">
          <children>
@@ -39,14 +39,14 @@
             </Button>
             <ImageView fitHeight="123.0" fitWidth="225.0" layoutX="329.0" layoutY="353.0" opacity="0.13" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@assests/hostel.png" />
+                  <Image url="@assests/images/hostel.png" />
                </image>
             </ImageView>
             <Label fx:id="lblHide" layoutX="360.0" layoutY="266.0" onMousePressed="#showPasswordOnMousePressed" onMouseReleased="#hidePasswordOnMousePressedd" prefHeight="25.0" prefWidth="25.0">
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assests/Cloce_Eye1.png" />
+                        <Image url="@assests/images/Cloce_Eye1.png" />
                      </image>
                   </ImageView>
                </graphic>

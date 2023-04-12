@@ -20,6 +20,7 @@ public class Loging {
 
     @Id
     private String userID;
+    @Column
     private String name;
     private String address;
     private String contact_no;

@@ -20,7 +20,7 @@ public class Reservation {
     private String res_id;
     private LocalDate date;
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "student_Id", referencedColumnName = "Student_Id")
+    @JoinColumn(name = "student_id", referencedColumnName = "student_id")
     private Student student_id;
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "room_id", referencedColumnName = "room_id")
