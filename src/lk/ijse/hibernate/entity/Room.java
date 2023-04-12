@@ -27,8 +27,8 @@ public class Room {
     private List<Reservation> roomDetails = new ArrayList<>();
 
 
-    public Room(String room_type_id, String type, String key_money, int qty) {
-        this.room_id = room_type_id;
+    public Room(String room_id, String type, String key_money, int qty) {
+        this.room_id = room_id;
         this.type = type;
         this.key_money = key_money;
         this.qty = qty;

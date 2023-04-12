@@ -27,7 +27,6 @@ public class LoginFormController {
     public PasswordField Pasword_Id;
     public Label lblHide;
     public AnchorPane logging_pane;
-
     int attempts = 0;
 
 
