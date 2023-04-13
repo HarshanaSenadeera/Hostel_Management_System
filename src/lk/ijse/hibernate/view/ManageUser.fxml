@@ -67,17 +67,17 @@
          </font>
       </JFXTextField>
       <JFXComboBox fx:id="cmbGender" focusColor="#fc9300" layoutX="698.0" layoutY="201.0" prefHeight="25.0" prefWidth="233.0" promptText="Gender:" styleClass="combo" stylesheets="@assests/style/style.css" unFocusColor="#fc9300" />
-      <Button fx:id="btnAddNew" layoutX="829.0" layoutY="311.0" mnemonicParsing="false" onAction="#btnAddNew_OnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #215aea;" text="Add New" textFill="WHITE">
+      <Button fx:id="btnAddNew" layoutX="829.0" layoutY="311.0" mnemonicParsing="false" onAction="#btnAddNew_OnAction" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #215aea;" text="Add New" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button fx:id="btnSave" layoutX="829.0" layoutY="398.0" mnemonicParsing="false" onAction="#btnSave_OnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #e0c305;" text="Save" textFill="WHITE">
+      <Button fx:id="btnSave" layoutX="829.0" layoutY="398.0" mnemonicParsing="false" onAction="#btnSave_OnAction" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #e0c305;" text="Save" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button fx:id="btnDelete" layoutX="829.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnDelete_OnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #ea2922;" text="Delete" textFill="WHITE">
+      <Button fx:id="btnDelete" layoutX="829.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnDelete_OnAction" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #ea2922;" text="Delete" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

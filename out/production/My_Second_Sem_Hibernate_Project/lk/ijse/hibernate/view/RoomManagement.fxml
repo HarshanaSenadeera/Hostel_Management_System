@@ -10,8 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane fx:id="RoomPane" prefHeight="564.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.RoomManagementController">
+<AnchorPane fx:id="RoomPane" prefHeight="623.0" prefWidth="987.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.RoomManagementController">
    <children>
       <ImageView fitHeight="376.0" fitWidth="612.0" layoutX="325.0" layoutY="53.0" opacity="0.17" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -54,17 +53,17 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button fx:id="btnAddNew" layoutX="843.0" layoutY="266.0" mnemonicParsing="false" onAction="#btnAddNew_OnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #215aea;" text="Add New" textFill="WHITE">
+      <Button fx:id="btnAddNew" layoutX="843.0" layoutY="266.0" mnemonicParsing="false" onAction="#btnAddNew_OnAction" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #215aea;" text="Add New" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button fx:id="btnSave" layoutX="843.0" layoutY="353.0" mnemonicParsing="false" onAction="#btnSave_OnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #e0c305;" text="Save" textFill="WHITE">
+      <Button fx:id="btnSave" layoutX="843.0" layoutY="353.0" mnemonicParsing="false" onAction="#btnSave_OnAction" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #e0c305;" text="Save" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button fx:id="btnDelete" layoutX="843.0" layoutY="439.0" mnemonicParsing="false" onAction="#btnDelete_OnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #ea2922;" text="Delete" textFill="WHITE">
+      <Button fx:id="btnDelete" layoutX="843.0" layoutY="439.0" mnemonicParsing="false" onAction="#btnDelete_OnAction" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #ea2922;" text="Delete" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
