@@ -3,6 +3,7 @@ package lk.ijse.hibernate.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ import java.util.List;
 public class Room {
 
     @Id
+    @Column(columnDefinition = "VARCHAR(200)")
     private String room_id;
     private String type;
     private String key_money;

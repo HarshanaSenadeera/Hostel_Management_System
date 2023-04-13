@@ -78,7 +78,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button fx:id="btnAddNew" layoutX="846.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnAddNew_OnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #215aea;" text="Add New" textFill="WHITE">
+      <Button fx:id="btnAddNew" layoutX="846.0" layoutY="340.0" mnemonicParsing="false" onAction="#Btn_Add_New_On_Action" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #215aea;" text="Add New" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

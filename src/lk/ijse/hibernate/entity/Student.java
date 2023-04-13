@@ -3,6 +3,7 @@ package lk.ijse.hibernate.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -19,6 +20,7 @@ import java.util.List;
 public class Student {
 
     @Id
+    @Column(columnDefinition = "VARCHAR(200)")
     private String student_id;
     private String name;
     private String address;

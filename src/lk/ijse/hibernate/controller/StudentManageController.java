@@ -131,7 +131,7 @@ public class StudentManageController implements Initializable {
                 e.printStackTrace();
             }
 
-            StudentTM selectedItem = (StudentTM) tblStudent.getSelectionModel().getSelectedItem();
+            StudentTM selectedItem = tblStudent.getSelectionModel().getSelectedItem();
             selectedItem.setStudent_id(id);
             selectedItem.setName(name);
             selectedItem.setAddress(address);
@@ -264,5 +264,4 @@ public class StudentManageController implements Initializable {
     private boolean exitStudent(String id) throws SQLException, ClassNotFoundException {
         return studentBO.existStudentID(id);
     }
-
 }
