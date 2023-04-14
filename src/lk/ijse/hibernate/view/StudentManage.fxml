@@ -20,42 +20,37 @@
             <Image url="@assests/images/HostelStudent.png" />
          </image>
       </ImageView>
-      <Text fill="#fc9300" layoutX="406.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Student" textAlignment="CENTER" wrappingWidth="226.13671875">
-         <font>
-            <Font name="Bell MT Bold" size="31.0" />
-         </font>
-      </Text>
-      <JFXTextField fx:id="txtId" focusColor="#fc9300" labelFloat="true" layoutX="14.0" layoutY="104.0" prefHeight="31.0" prefWidth="274.0" promptText="Student ID :" unFocusColor="#fc9300">
+      <JFXTextField fx:id="txtId" focusColor="#fc9300" labelFloat="true" layoutX="14.0" layoutY="149.0" prefHeight="31.0" prefWidth="274.0" promptText="Student ID :" unFocusColor="#fc9300">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="txtName" focusColor="#fc9300" labelFloat="true" layoutX="346.0" layoutY="104.0" prefHeight="31.0" prefWidth="274.0" promptText="Student Name :" unFocusColor="#fc9300">
+      <JFXTextField fx:id="txtName" focusColor="#fc9300" labelFloat="true" layoutX="346.0" layoutY="149.0" prefHeight="31.0" prefWidth="274.0" promptText="Student Name :" unFocusColor="#fc9300">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="txtContactNo" focusColor="#fc9300" labelFloat="true" layoutX="16.0" layoutY="170.0" prefHeight="31.0" prefWidth="274.0" promptText="Contact No :" unFocusColor="#fc9300">
+      <JFXTextField fx:id="txtContactNo" focusColor="#fc9300" labelFloat="true" layoutX="16.0" layoutY="215.0" prefHeight="31.0" prefWidth="274.0" promptText="Contact No :" unFocusColor="#fc9300">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="txtAddress" focusColor="#fc9300" labelFloat="true" layoutX="713.0" layoutY="104.0" prefHeight="31.0" prefWidth="274.0" promptText="Student Address :" unFocusColor="#fc9300">
+      <JFXTextField fx:id="txtAddress" focusColor="#fc9300" labelFloat="true" layoutX="713.0" layoutY="149.0" prefHeight="31.0" prefWidth="274.0" promptText="Student Address :" unFocusColor="#fc9300">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXTextField>
-      <JFXComboBox fx:id="cmbGender" focusColor="#fc9300" layoutX="713.0" layoutY="162.0" prefHeight="39.0" prefWidth="274.0" promptText="Gender" styleClass="combo" stylesheets="@assests/style/style.css" unFocusColor="#fc9300">
+      <JFXComboBox fx:id="cmbGender" focusColor="#fc9300" layoutX="713.0" layoutY="207.0" prefHeight="39.0" prefWidth="274.0" promptText="Gender" styleClass="combo" stylesheets="@assests/style/style.css" unFocusColor="#fc9300">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXComboBox>
-      <JFXDatePicker fx:id="datePickerDOB" defaultColor="#fc9300" layoutX="346.0" layoutY="170.0" prefHeight="31.0" prefWidth="274.0" promptText="Date Of Birth :" styleClass="combo" stylesheets="@assests/style/style.css">
+      <JFXDatePicker fx:id="datePickerDOB" defaultColor="#fc9300" layoutX="346.0" layoutY="215.0" prefHeight="31.0" prefWidth="274.0" promptText="Date Of Birth :" styleClass="combo" stylesheets="@assests/style/style.css">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXDatePicker>
-      <TableView fx:id="tblStudent" fixedCellSize="0.0" layoutX="32.0" layoutY="305.0" opacity="0.93" prefHeight="301.0" prefWidth="800.0" style="-fx-border-radius: 20; -fx-border-width: 2; -fx-border-color: orange;">
+      <TableView fx:id="tblStudent" fixedCellSize="0.0" layoutX="32.0" layoutY="305.0" opacity="0.93" prefHeight="288.0" prefWidth="800.0" style="-fx-border-radius: 20; -fx-border-width: 2; -fx-border-color: orange;">
          <columns>
             <TableColumn prefWidth="97.0" text="Student ID" />
             <TableColumn prefWidth="167.0" text="Student Name" />
@@ -68,12 +63,12 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <JFXTextField fx:id="txtSearch" focusColor="#fc9300" labelFloat="true" layoutX="714.0" layoutY="48.0" onAction="#txtSearchOnAction" prefHeight="39.0" prefWidth="273.0" unFocusColor="#fc9300">
+      <JFXTextField fx:id="txtSearch" focusColor="#fc9300" labelFloat="true" layoutX="714.0" layoutY="93.0" onAction="#txtSearchOnAction" prefHeight="39.0" prefWidth="273.0" unFocusColor="#fc9300">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </JFXTextField>
-      <Button fx:id="btnBack1" layoutX="32.0" layoutY="36.0" mnemonicParsing="false" onAction="#BackOnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: orange;" text="Back">
+      <Button fx:id="btnBack1" layoutX="32.0" layoutY="71.0" mnemonicParsing="false" onAction="#BackOnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: orange;" text="Back">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -98,5 +93,23 @@
             <Image url="@assests/images/Search.png" />
          </image>
       </ImageView>
+      <AnchorPane layoutY="605.0" prefHeight="20.0" prefWidth="996.0" style="-fx-background-color: black;">
+         <children>
+            <Text fill="WHITE" layoutX="127.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2023  Hostel Management System. All Right Reserved Design By Harshana Senadeera">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="47.0" prefWidth="996.0" style="-fx-background-color: black;">
+         <children>
+            <Text fill="#fc9300" layoutX="385.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Student" textAlignment="CENTER" wrappingWidth="226.13671875">
+               <font>
+                  <Font name="Bell MT Bold" size="31.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

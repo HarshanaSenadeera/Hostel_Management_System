@@ -11,35 +11,37 @@
 
 <AnchorPane fx:id="AdminDashboard" prefHeight="589.0" prefWidth="983.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.DashBoardController">
    <children>
-      <Text fill="#fc9300" layoutX="380.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="223.13671875">
-         <font>
-            <Font name="Bell MT Bold" size="46.0" />
-         </font>
-      </Text>
+      <ImageView fitHeight="475.0" fitWidth="511.0" layoutX="255.0" layoutY="65.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/Dash.png" />
+         </image>
+      </ImageView>
       <Separator layoutX="240.0" layoutY="74.0" prefHeight="0.0" prefWidth="607.0" />
       <ImageView fx:id="imgStudent" fitHeight="199.0" fitWidth="215.0" layoutX="50.0" layoutY="163.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assests/images/Reservation.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgRooms" fitHeight="176.0" fitWidth="207.0" layoutX="371.0" layoutY="191.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgRooms" fitHeight="175.0" fitWidth="255.0" layoutX="371.0" layoutY="191.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assests/images/Room_Book.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgKeyMoney" fitHeight="190.0" fitWidth="215.0" layoutX="650.0" layoutY="163.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgKeyMoney" fitHeight="222.0" fitWidth="223.0" layoutX="697.0" layoutY="163.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assests/images/Key_Mney.png" />
          </image>
       </ImageView>
-      <Text layoutX="176.0" layoutY="552.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2023  Hostel Management System. All Right Reserved Design By Harshana Senadeera" />
-      <Label fx:id="lblMenu" layoutX="343.0" layoutY="388.0" prefHeight="38.0" prefWidth="416.0" text="WELCOME" textAlignment="CENTER" textFill="#fc9300">
+      <Label fx:id="lblMenu" layoutX="343.0" layoutY="388.0" prefHeight="54.0" prefWidth="508.0" text="WELCOME" textAlignment="CENTER" textFill="#fc9300">
          <font>
-            <Font name="Berlin Sans FB" size="34.0" />
+            <Font name="Berlin Sans FB" size="42.0" />
          </font>
       </Label>
-      <Label fx:id="lblDescription" layoutX="275.0" layoutY="442.0" prefHeight="17.0" prefWidth="454.0" text="Please select one of above main operations to processed" textAlignment="CENTER" />
-      <Button fx:id="btnManageUser" layoutX="707.0" layoutY="94.0" mnemonicParsing="false" onAction="#userOnAction" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: orange;" text="Manage User">
+      <Label fx:id="lblDescription" layoutX="348.0" layoutY="449.0" prefHeight="17.0" prefWidth="454.0" text="Please select one of above main operations to processed" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font></Label>
+      <Button fx:id="btnManageUser" layoutX="808.0" layoutY="94.0" mnemonicParsing="false" onAction="#userOnAction" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: orange;" text="Manage User">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -49,5 +51,23 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
+      <AnchorPane layoutY="-1.0" prefHeight="47.0" prefWidth="983.0" style="-fx-background-color: black;">
+         <children>
+            <Text fill="#fc9300" layoutX="380.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="223.13671875">
+               <font>
+                  <Font name="Bell MT Bold" size="46.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="569.0" prefHeight="20.0" prefWidth="983.0" style="-fx-background-color: black;">
+         <children>
+            <Text fill="WHITE" layoutX="127.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2023  Hostel Management System. All Right Reserved Design By Harshana Senadeera">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

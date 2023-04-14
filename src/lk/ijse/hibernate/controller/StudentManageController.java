@@ -78,7 +78,7 @@ public class StudentManageController implements Initializable {
         String gender = (String) cmbGender.getValue();
 
 
-        if (!id.matches("^(ST-[0-9]{3,4})$")) {
+        if (!id.matches("^(STU-[0-9]{3,4})$")) {
             NotificationController.Warring("Student Id", "Invalid Student Id.Check STU-000 type in your entered value.");
             txtId.requestFocus();
             return;
