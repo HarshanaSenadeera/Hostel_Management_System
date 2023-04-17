@@ -1,6 +1,7 @@
 package lk.ijse.hibernate.controller;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -11,8 +12,13 @@ import javafx.scene.layout.AnchorPane;
 import lk.ijse.hibernate.bo.BOFactory;
 import lk.ijse.hibernate.bo.custom.UserBO;
 import lk.ijse.hibernate.dto.LoginDTO;
+import lk.ijse.hibernate.entity.Loging;
+import lk.ijse.hibernate.util.FactoryConfiguration;
 import lk.ijse.hibernate.util.NotificationController;
 import lk.ijse.hibernate.util.UILoader;
+import org.hibernate.Session;
+import org.hibernate.query.Query;
+
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -52,28 +58,31 @@ public class LoginFormController {
 
     public void LoggingOnAction(ActionEvent actionEvent) throws SQLException, IOException, ClassNotFoundException {
 
-        UILoader.LoginOnAction(logging_pane, "DashBoard");
-        NotificationController.LoginSuccessfulNotification("Admin");
-        ArrayList<LoginDTO> loginDTOS = userBO.getAllUsers();
-        attempts++;
-        loginDTOS.forEach(e -> {
-            if (attempts <= 3) {
-                if (e.getUserID().equals(UserName_Id.getText()) && e.getPassword().equals(Pasword_Id.getText())) {
-                    try {
-                        UILoader.LoginOnAction(logging_pane, "DashBoard");
-                        NotificationController.LoginSuccessfulNotification("Admin");
-                    } catch (IOException | SQLException ex) {
-                        ex.printStackTrace();
-                    }
-                } else {
 
-                }
-            } else {
-                UserName_Id.setEditable(false);
-                Pasword_Id.setEditable(false);
-                NotificationController.LoginUnSuccessfulNotification("Account is Temporarily Disabled or You Did not Sign in Correctly.");
+        Session session = FactoryConfiguration.getInstance().getSession();
+
+
+        Query query = (Query) session.createQuery("from Loging where name =:user_name and Password=:password");
+        query.setParameter("user_name", UserName_Id.getText());
+        query.setParameter("password", Pasword_Id.getText());
+        Loging user = (Loging) query.uniqueResult();
+        if (user != null) {
+            try {
+                UILoader.LoginOnAction(logging_pane, "DashBoard");
+                NotificationController.LoginSuccessfulNotification("Admin");
+
+
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
             }
-        });
+        } else {
+            NotificationController.LoginUnSuccessfulNotification("");
+
+        }
+
+        session.close();
         
     }
 

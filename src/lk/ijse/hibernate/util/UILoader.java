@@ -26,6 +26,8 @@ public class UILoader {
 
         Stage window = (Stage) anchorPane.getScene().getWindow();
         window.setScene(new Scene(FXMLLoader.load(Objects.requireNonNull(UILoader.class.getResource("/lk/ijse/hibernate/view/" + location + ".fxml")))));
+        window.setResizable(false);
+        window.centerOnScreen();
     }
 
     public static void NavigateToHome(AnchorPane anchorPane, String location) throws IOException, SQLException {

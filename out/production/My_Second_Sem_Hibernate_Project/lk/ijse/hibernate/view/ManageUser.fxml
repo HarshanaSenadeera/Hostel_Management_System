@@ -18,22 +18,17 @@
             <Image url="@assests/images/User.png" />
          </image>
       </ImageView>
-      <Text fill="#fc9300" layoutX="378.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage User" textAlignment="CENTER" wrappingWidth="226.13671875">
-         <font>
-            <Font name="Bell MT Bold" size="31.0" />
-         </font>
-      </Text>
-      <JFXTextField fx:id="txtId" focusColor="#fc9300" labelFloat="true" layoutX="39.0" layoutY="129.0" prefHeight="31.0" prefWidth="233.0" promptText="User ID :" unFocusColor="#fc9300">
+      <JFXTextField fx:id="txtId" focusColor="#fc9300" labelFloat="true" layoutX="36.0" layoutY="128.0" prefHeight="31.0" prefWidth="233.0" promptText="User ID :" unFocusColor="#fc9300">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXTextField>
-      <Button fx:id="btnBack" layoutX="52.0" layoutY="56.0" mnemonicParsing="false" onAction="#BackOnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: orange;" text="Back">
+      <Button fx:id="btnBack" layoutX="22.0" layoutY="68.0" mnemonicParsing="false" onAction="#BackOnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: orange;" text="Back">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <TableView fx:id="tblUser" fixedCellSize="0.0" layoutX="14.0" layoutY="266.0" opacity="0.93" prefHeight="340.0" prefWidth="807.0" style="-fx-border-radius: 20; -fx-border-width: 2; -fx-border-color: orange;">
+      <TableView fx:id="tblUser" fixedCellSize="0.0" layoutX="14.0" layoutY="266.0" opacity="0.93" prefHeight="279.0" prefWidth="807.0" style="-fx-border-radius: 20; -fx-border-width: 2; -fx-border-color: orange;">
          <columns>
             <TableColumn prefWidth="129.0" text="User ID" />
             <TableColumn prefWidth="90.0" text="User Name" />
@@ -46,27 +41,27 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <JFXTextField fx:id="txtName" focusColor="#fc9300" labelFloat="true" layoutX="364.0" layoutY="134.0" prefHeight="31.0" prefWidth="233.0" promptText="User Name :" unFocusColor="#fc9300">
+      <JFXTextField fx:id="txtName" focusColor="#fc9300" labelFloat="true" layoutX="361.0" layoutY="133.0" prefHeight="31.0" prefWidth="233.0" promptText="User Name :" unFocusColor="#fc9300">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="txtAddress" focusColor="#fc9300" labelFloat="true" layoutX="698.0" layoutY="134.0" prefHeight="31.0" prefWidth="233.0" promptText="User Address:" unFocusColor="#fc9300">
+      <JFXTextField fx:id="txtAddress" focusColor="#fc9300" labelFloat="true" layoutX="695.0" layoutY="133.0" prefHeight="31.0" prefWidth="233.0" promptText="User Address:" unFocusColor="#fc9300">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="txtContactNo" focusColor="#fc9300" labelFloat="true" layoutX="39.0" layoutY="202.0" prefHeight="31.0" prefWidth="233.0" promptText="Contact No:" unFocusColor="#fc9300">
+      <JFXTextField fx:id="txtContactNo" focusColor="#fc9300" labelFloat="true" layoutX="36.0" layoutY="201.0" prefHeight="31.0" prefWidth="233.0" promptText="Contact No:" unFocusColor="#fc9300">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="txtPassword" focusColor="#fc9300" labelFloat="true" layoutX="364.0" layoutY="202.0" prefHeight="31.0" prefWidth="233.0" promptText="Password:" unFocusColor="#fc9300">
+      <JFXTextField fx:id="txtPassword" focusColor="#fc9300" labelFloat="true" layoutX="361.0" layoutY="201.0" prefHeight="31.0" prefWidth="233.0" promptText="Password:" unFocusColor="#fc9300">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXTextField>
-      <JFXComboBox fx:id="cmbGender" focusColor="#fc9300" layoutX="698.0" layoutY="201.0" prefHeight="25.0" prefWidth="233.0" promptText="Gender:" styleClass="combo" stylesheets="@assests/style/style.css" unFocusColor="#fc9300" />
+      <JFXComboBox fx:id="cmbGender" focusColor="#fc9300" layoutX="695.0" layoutY="200.0" prefHeight="25.0" prefWidth="233.0" promptText="Gender:" styleClass="combo" stylesheets="@assests/style/style.css" unFocusColor="#fc9300" />
       <Button fx:id="btnAddNew" layoutX="833.0" layoutY="344.0" mnemonicParsing="false" onAction="#btnAddNew_OnAction" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #215aea;" text="Add New" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
@@ -82,5 +77,23 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
+      <AnchorPane layoutY="567.0" prefHeight="20.0" prefWidth="996.0" style="-fx-background-color: black;">
+         <children>
+            <Text fill="WHITE" layoutX="127.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2023  Hostel Management System. All Right Reserved Design By Harshana Senadeera">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="47.0" prefWidth="996.0" style="-fx-background-color: black;">
+         <children>
+            <Text fill="#fc9300" layoutX="385.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage User" textAlignment="CENTER" wrappingWidth="226.13671875">
+               <font>
+                  <Font name="Bell MT Bold" size="31.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
