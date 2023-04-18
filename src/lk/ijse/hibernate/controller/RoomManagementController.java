@@ -110,7 +110,7 @@ public class RoomManagementController implements Initializable {
 
         String code = tblRoom.getSelectionModel().getSelectedItem().getRoom_type_id();
         try {
-            if (!exitRooms(code)) {
+            if (exitRooms(code)) {
                 NotificationController.WarringError("Delete Rooms Warning", code, "There is no such Rooms associated with the ");
             }
             roomBO.deleteRooms(code);

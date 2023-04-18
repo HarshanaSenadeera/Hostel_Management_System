@@ -147,7 +147,7 @@ public class StudentManageController implements Initializable {
 
         String code = tblStudent.getSelectionModel().getSelectedItem().getStudent_id();;
         try {
-            if (!exitStudent(code)) {
+            if (exitStudent(code)) {
                 NotificationController.WarringError("Delete Student Warning", code, "There is no such Student associated with the ");
             }
             studentBO.deleteStudent(code);

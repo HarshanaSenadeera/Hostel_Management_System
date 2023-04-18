@@ -1,7 +1,6 @@
 package lk.ijse.hibernate.controller;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -9,9 +8,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import lk.ijse.hibernate.bo.BOFactory;
-import lk.ijse.hibernate.bo.custom.UserBO;
-import lk.ijse.hibernate.dto.LoginDTO;
 import lk.ijse.hibernate.entity.Loging;
 import lk.ijse.hibernate.util.FactoryConfiguration;
 import lk.ijse.hibernate.util.NotificationController;
@@ -22,7 +18,7 @@ import org.hibernate.query.Query;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
+
 
 /**
  * @author : Harshana Senadeera
@@ -35,8 +31,6 @@ public class LoginFormController {
     public AnchorPane logging_pane;
     int attempts = 0;
 
-
-    private final UserBO userBO = (UserBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.USER);
     public void CancelOnAction(ActionEvent actionEvent) {
         UserName_Id.clear();
         Pasword_Id.clear();
@@ -58,9 +52,7 @@ public class LoginFormController {
 
     public void LoggingOnAction(ActionEvent actionEvent) throws SQLException, IOException, ClassNotFoundException {
 
-
         Session session = FactoryConfiguration.getInstance().getSession();
-
 
         Query query = (Query) session.createQuery("from Loging where name =:user_name and Password=:password");
         query.setParameter("user_name", UserName_Id.getText());
@@ -70,7 +62,6 @@ public class LoginFormController {
             try {
                 UILoader.LoginOnAction(logging_pane, "DashBoard");
                 NotificationController.LoginSuccessfulNotification("Admin");
-
 
             } catch (IOException ioException) {
                 ioException.printStackTrace();
@@ -83,7 +74,6 @@ public class LoginFormController {
         }
 
         session.close();
-        
     }
 
     public void hidePasswordOnMousePressedd(MouseEvent mouseEvent) {
