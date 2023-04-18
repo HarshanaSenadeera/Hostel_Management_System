@@ -93,7 +93,7 @@ public class ManageUserController implements Initializable {
             NotificationController.Warring("Contact Number", "Invalid User Contact Number.");
             txtContactNo.requestFocus();
             return;
-        } else if (!address.matches("^([A-Za-z]{4,10})$")) {
+        } else if (!address.matches("^([A-Za-z]{4,60})$")) {
             NotificationController.Warring("Address", "Invalid User Address.");
             txtAddress.requestFocus();
             return;

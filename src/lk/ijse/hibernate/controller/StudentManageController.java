@@ -17,7 +17,9 @@ import lk.ijse.hibernate.dto.StudentDTO;
 import lk.ijse.hibernate.util.NotificationController;
 import lk.ijse.hibernate.util.UILoader;
 import lk.ijse.hibernate.view.TM.StudentTM;
+import org.hibernate.annotations.Entity;
 
+import javax.persistence.EntityNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -90,7 +92,7 @@ public class StudentManageController implements Initializable {
             NotificationController.Warring("Contact Number", "Invalid Student Contact Number.");
             txtContactNo.requestFocus();
             return;
-        } else if (!address.matches("^([A-Za-z]{4,10})$")) {
+        } else if (!address.matches("^([A-Za-z]{4,60})$")) {
             NotificationController.Warring("Address", "Invalid Student Address.");
             txtAddress.requestFocus();
             return;
@@ -147,7 +149,7 @@ public class StudentManageController implements Initializable {
 
         String code = tblStudent.getSelectionModel().getSelectedItem().getStudent_id();;
         try {
-            if (exitStudent(code)) {
+            if (!exitStudent(code)) {
                 NotificationController.WarringError("Delete Student Warning", code, "There is no such Student associated with the ");
             }
             studentBO.deleteStudent(code);
@@ -159,6 +161,8 @@ public class StudentManageController implements Initializable {
             NotificationController.WarringError("Delete Student Warning", code, "Failed to delete the Student ");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+        }catch (EntityNotFoundException e){
+            NotificationController.WarringError("Delete Student Warning", code, "Failed to delete the Student ");
         }
     }
 

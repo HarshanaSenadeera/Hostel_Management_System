@@ -16,6 +16,7 @@ import lk.ijse.hibernate.util.NotificationController;
 import lk.ijse.hibernate.util.UILoader;
 import lk.ijse.hibernate.view.TM.RoomTM;
 
+import javax.persistence.EntityNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -110,7 +111,7 @@ public class RoomManagementController implements Initializable {
 
         String code = tblRoom.getSelectionModel().getSelectedItem().getRoom_type_id();
         try {
-            if (exitRooms(code)) {
+            if (!exitRooms(code)) {
                 NotificationController.WarringError("Delete Rooms Warning", code, "There is no such Rooms associated with the ");
             }
             roomBO.deleteRooms(code);
@@ -122,6 +123,9 @@ public class RoomManagementController implements Initializable {
             NotificationController.WarringError("Delete Rooms Warning", code, "Failed to delete the Rooms ");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+        }catch (EntityNotFoundException e){
+            NotificationController.WarringError("Delete Rooms Warning", code, "Failed to delete the Rooms ");
+
         }
     }
 
